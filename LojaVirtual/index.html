@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cabeçalho</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header>
+            <div id="top">
+                <div id="controleDosNumeros">
+                    <div id="telefone"> 
+                        <img src="imagens/telefone.png" alt="">
+                        <p class="numero1">(51)9 9920 0350</p>
+                    </div>    
+                    <div id="celular">
+                        <img src="imagens/whatsApp.png" alt="">
+                        <p class="numero2">(51)9 9920 0350</p>
+                    </div>
+                </div>
+                <div id="controleDosTextos">
+                    <p class="texto1">LISTA DE DESEJOS</p>
+                    <p class="texto2">FALE CONOSCO</p>
+                    <p class="texto3">TROCAS E DEVOLUÇÔES</p>
+                </div>
+            </div>
+            <div id="mid">
+                <a href="https://www.moovin.com.br/"><img id="logoMoovin" src="imagens/logoMoovin.png" alt=""></a>
+                <input id="input" type="text" placeholder="   O que você está procurando?">
+                <div id="entrar">
+                    <div class="botaoDeClique" id="botaoDeClique">
+                        <p class="entrar">Entrar</p>
+                        <img class="chevron" src="imagens/chevron-down.png" alt="">
+                    </div>    
+                </div>    
+                <img class="sacola" src="imagens/sacola.png" alt="">
+                <nav class="caixaDoBotao" id="caixaDoBotao">
+                    <ul align="center">
+                        <div id="links">
+                            <p>Minha conta</p>
+                            <p>Meus pedidos</p>
+                            <p>Lista de desejos</p>
+                        </div>    
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <script>
+            var clique = 1;
+            var botao = document.getElementById('botaoDeClique').addEventListener("click",function(){
+                var menu = document.getElementById('caixaDoBotao');
+                if (clique == 1) {
+                    menu.style.left = "930px";
+                    menu.style.top = "87px";
+                    clique = 0;
+                }else{  
+                    menu.style.left = "-100%";
+                    clique = 1;
+                }
+            }); 
+        </script>
+    </body>
+</html>
